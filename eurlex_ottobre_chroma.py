@@ -44,7 +44,7 @@ db_file='legalAI.db'
 if not os.path.exists(db_file):
   if not os.path.exists('legalsqlite.zip'):
     utils.download_url('https://legalai.commonweb.net/shared_datas/legalsqlite.zip')
-  utils.unzip('legalsqlite.zip')
+    utils.unzip('legalsqlite.zip')
 
 # effettuare connesion al db (sqlite file)
 
