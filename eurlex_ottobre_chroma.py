@@ -181,7 +181,7 @@ for record in df_test.itertuples():
   print(len(docs),'documenti...',end='\r')
   chromadb_client.add_documents(documents=docs)
 
-  if(i<1000):
+  if(i<500):
     print(i,x,record.celex_id,f'{len(docs):3d} {time.perf_counter()-tm_on:7.2f} {len(docs):3d}',end='\n')
   else:
     break
